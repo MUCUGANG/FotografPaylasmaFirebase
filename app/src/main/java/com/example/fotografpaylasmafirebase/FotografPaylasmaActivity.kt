@@ -60,7 +60,7 @@ class FotografPaylasmaActivity : AppCompatActivity() {
                 yuklenenGorselReference.downloadUrl.addOnSuccessListener {uri ->
                     val downloadUrl = uri.toString()//url uretiyor
                     val guncelKullaniciEmaili  = auth.currentUser!!.email.toString()
-                    val kullaniciYorumu = binding.yorumText.toString()
+                    val kullaniciYorumu = binding.yorumText.text.toString()
                     val tarih = com.google.firebase.Timestamp.now()
 
                     //veri tabanı işlemleri
